@@ -36,7 +36,15 @@ header nav ul li a {
     font-size: 15px;
 
 }
+header nav ul li a:hover {
+    background-color:white;
+    text-decoration:none;
+    color: black;
+    border-radius: 5px;
+    font-size: 17px;
+    /*margin: 5px 5px 5px 5px;*/
 
+}
 
 /*.listatop{
     display: inline-block;
@@ -137,7 +145,12 @@ color: whitesmoke;
     padding: 5px;
     border-radius: 10px;
 }
+.boton:hover{
+    background-color: white;
+    color: black;
 
+
+}
 .grid-galeria{
     background-color: black;
     color: whitesmoke;
