@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color:black;
+    padding: 10px;
+    z-index: 1;
+    /*margin-bottom: 5px;*/
+    h1{
+        color: whitesmoke;
+        font-size: 50px;
+    }
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                margin: 2.5px 5px 2.5px 5px;
+                list-style: none;
+                a{
+                    text-decoration:none;
+                    color: white;
+                    font-size: 15px;
+                    &:hover{
+                        background-color:white;
+                        text-decoration:none;
+                        color: black;
+                        border-radius: 5px;
+                        font-size: 17px;
+                        /*margin: 5px 5px 5px 5px;*/
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    width: 100;
+    height: 100vh;
+    text-align: center;
+    color: whitesmoke;
+    /*padding: 5px 0 5px 0;*/
+    background-image: url(../img/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg);
+    /*background-position:center*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-attachment: fixed;
+    h2{
+        font-size: 20px;
+    }
+    p{
+
+    }
+}
+
+.producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*background-image: url(../img/fondo\ black.jpg);*/
+    background-color: black;
+    color: whitesmoke;
+    .nuevos{
+        background-image: url(../img/unidades\ selladas\ nuevas.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items:center;
+        
+        p{
+
+        }
+        a{
+
+        }
+    }
+
+    .usados{
+
+        background-image: url(../img/usados\ premiom\ 2.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items:center;
+    
+        p{
+
+        }
+        a{
+            
+        }
+    }
+
+    .servicio{
+        background-image: url(../img/servicio\ tecnico\ apple.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items:center;
+        p{
+
+        }
+        a{
+            
+        }
+    }
+    .boton{
+        text-decoration: none;
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.grid-galeria{
+    background-color: black;
+    color: whitesmoke;
+    padding:20px 5px 20px 5px ;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px 300px;
+    gap: 6px;
+    /*grid-template-columns: auto auto auto;*/
+    /*grid-template-columns:  33.3% 33.3% 33.3%;*/
+
+
+    /* gap: 2px;*/
+    .grid-item{
+        position: relative;
+        /*no usare SPAN provisoriamente ya que no 
+        defini las imagenes ni areas de grilla final*/
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        
+        }
+        h3{
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.603);
+            width: 100%;
+            padding: 2px;
+        }
+    }
+}
+
+footer{
+
+    p{
+        background-color: black;
+        color: whitesmoke;
+    }
+    div{
+
+        a{
+            img{
+                width: 50px;
+                height: 50px;  
+            }
+        }
+    }
+}
